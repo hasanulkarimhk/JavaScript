@@ -1,0 +1,15 @@
+function reverseString(str) {
+  let reversed = ''; // Initialize an empty string to store the reversed characters.
+  
+  // Iterate through the original string in reverse order.
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i]; // Append each character to the reversed string.
+  }
+  
+  return reversed; // Return the reversed string.
+}
+
+// Example usage:
+const originalString = "Hello, World!";
+const reversedString = reverseString(originalString);
+console.log(reversedString); // Outputs: "!dlroW ,olleH"
